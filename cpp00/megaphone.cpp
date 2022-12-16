@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/16 15:21:13 by bkhatib           #+#    #+#             */
-/*   Updated: 2022/12/16 15:51:19 by bkhatib          ###   ########.fr       */
+/*   Updated: 2022/12/16 15:54:51 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,8 @@ int	main(int argc, char **argv)
 		{
 			for (j = 0; argv[i][j]; j++)
 				std::cout << argv[i][j];
+			if (i < argc - 1)
+				std::cout << ' ';
 		}
 	}
 	return (EXIT_SUCCESS);
