@@ -6,12 +6,12 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/02 15:34:51 by bkhatib           #+#    #+#              #
-#    Updated: 2023/01/02 15:35:21 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/01/02 15:53:09 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= phonebook
-	
+
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98
 RM		= rm -rf
