@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 14:54:31 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/04 15:13:36 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/04 16:09:25 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,4 +19,13 @@ Contact::Contact (std::string s1, std::string s2, std::string s3, std::string s4
 	nickname = s3;
 	phone_number = s4;
 	darkest_secret = s5;
+};
+
+void Contact::print_info (void)
+{
+	std::cout << "First name: " << first_name << std::endl;
+	std::cout << "Last name: " << last_name << std::endl;
+	std::cout << "nickname: " << nickname << std::endl;
+	std::cout << "Phone number: " << phone_number << std::endl;
+	std::cout << "Darkest secret: " << darkest_secret << std::endl;
 };
