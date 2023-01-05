@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:28:51 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/04 16:06:21 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/05 16:38:06 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ class	Contact
 {
 	std::string	first_name, last_name, nickname, phone_number, darkest_secret;
 public:
-	Contact(std::string, std::string, std::string, std::string, std::string);
+	Contact();
+	void	set_values(std::string, std::string, std::string, std::string, std::string);
 	void	print_info(void);
 };
 
