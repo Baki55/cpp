@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 14:54:31 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/07 16:38:19 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/07 17:18:07 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void Contact::setContact(std::string s1, std::string s2, std::string s3, std::st
 	nickname = s3;
 	phoneNumber = s4;
 	darkestSecret = s5;
-	std::cout << "The contact is successfully added to your Phonebook." std::endl;
+	std::cout << "The contact is successfully added to your Phonebook." << std::endl;
 }
 
 void Contact::getContact(void)
