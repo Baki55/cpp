@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/07 18:44:16 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/07 19:01:42 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,22 @@ void	PhoneBook::add()
 	if(numContact == 7)
 		cont[0].setContact(fN, lN, nN, pN, dS);
 	else
+	{
+		cont[numContact].setContact(fN, lN, nN, pN, dS);
 		numContact++;
+	}
+}
+
+void	PhoneBook::search()
+{
+	int	i = 0;
+	while(i < numContact)
+	{
+		std::cout << i <<std::endl;
+		cont[i].getContact();
+		i++;
+	}
+	std::cout << "Search done." <<std::endl;
 }
 
 void	PhoneBook::exit()
