@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 16:49:47 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/07 18:30:26 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/07 18:53:37 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ public:
 	PhoneBook();
 	int	done;
 	void	add();
-	void	search(){};
+	void	search();
 	void	exit();
 };
 
