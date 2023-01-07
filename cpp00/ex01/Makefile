@@ -6,11 +6,11 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/02 15:34:51 by bkhatib           #+#    #+#              #
-#    Updated: 2023/01/04 15:21:49 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/01/07 17:35:36 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= phonebook
+NAME	= PhoneBook
 
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98
@@ -28,7 +28,7 @@ all: $(NAME)
 
 $(NAME): 
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) main.cpp contact.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) main.cpp Contact.cpp PhoneBook.cpp -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:
