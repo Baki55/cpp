@@ -6,16 +6,29 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 15:08:16 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/04 16:02:50 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/07 18:13:21 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Contact.hpp"
+#include "PhoneBook.hpp"
 
 int	main(void)
 {
-	Contact	contact1("b", "k", "bk", "5", "kb");
+	PhoneBook	myPhoneBook;
+	std::string cmd;
 	
-	contact1.print_info();
-	return(0);
+	while (myPhoneBook.done == 0)
+	{
+		std::cin >> cmd;
+		if(cmd == "ADD")
+			myPhoneBook.add();
+		else if(cmd == "SEARCH")
+			myPhoneBook.search();
+		else if(cmd == "EXIT")
+			myPhoneBook.exit();
+		else
+			std::cout << "Please enter a valid command." << std::endl;
+	}
+	return(1);
 }
