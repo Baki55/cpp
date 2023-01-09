@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 16:49:47 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/09 15:45:35 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/09 16:18:35 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 class PhoneBook
 {
-	Contact	cont[7];
+	Contact	cont[8];
 	int	numContact, n; // n is used to locate where we should add the new contact.
 public:
 	PhoneBook();
