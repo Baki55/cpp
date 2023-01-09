@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/09 15:47:53 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/09 16:06:28 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 PhoneBook::PhoneBook()
 {
 	numContact = 0;
-	n = 0;
+	n = 7;
 	done = 0;
 	std::cout << "Welcome in your phone book.\nYou can choose between those three commands:" <<std::endl;
 	std::cout << "ADD - To add a contact\nSEARCH - To search for a contact\nEXIT - To exit your phone book" <<std::endl;
@@ -34,8 +34,19 @@ void	PhoneBook::add()
 	std::cin >> pN;
 	std::cout << "Enter the darkest secret: ";
 	std::cin >> dS;
-	if(numContact == 7)
-		cont[0].setContact(fN, lN, nN, pN, dS);
+	if(numContact == 8)
+	{
+		if(n > 0)
+		{
+			cont[numContact - n - 1].setContact(fN, lN, nN, pN, dS);
+			n--;
+		}
+		else
+		{
+			cont[numContact - n - 1].setContact(fN, lN, nN, pN, dS);
+			n = 7;
+		}
+	}
 	else
 	{
 		cont[numContact].setContact(fN, lN, nN, pN, dS);
