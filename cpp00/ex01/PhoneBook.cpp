@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Phonebook.cpp                                      :+:      :+:    :+:   */
+/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/07 19:23:40 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/09 15:47:53 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 PhoneBook::PhoneBook()
 {
 	numContact = 0;
+	n = 0;
 	done = 0;
 	std::cout << "Welcome in your phone book.\nYou can choose between those three commands:" <<std::endl;
 	std::cout << "ADD - To add a contact\nSEARCH - To search for a contact\nEXIT - To exit your phone book" <<std::endl;
