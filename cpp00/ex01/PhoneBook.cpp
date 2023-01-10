@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/09 16:06:28 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/10 15:50:12 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,9 +57,10 @@ void	PhoneBook::add()
 void	PhoneBook::search()
 {
 	int	i = 0;
+	std::cout << "|" << std::setw(10) << "Id" << "|" << std::setw(10) << "First name" << "|" << std::setw(10) << "Last name" << "|" << std::setw(10) << "Nickname" << "|" <<std::endl;
 	while(i < numContact)
 	{
-		std::cout << i <<std::endl;
+		std::cout << "|" << std::setw(10) << i + 1 << std::flush;
 		cont[i].getContact();
 		i++;
 	}
