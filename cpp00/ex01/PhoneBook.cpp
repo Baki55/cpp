@@ -6,12 +6,13 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/11 16:38:43 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/11 17:01:33 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
 #include <string>
+#include <stdexcept>
 
 PhoneBook::PhoneBook()
 {
@@ -70,10 +71,17 @@ void	PhoneBook::search()
 	}
 	std::cout << "\nPlease enter the contact id that you want to see informations: ";
 	std::cin >> id;
-	if(stoi(id) > 0 and stoi(id) < numContact + 1)
-		cont[stoi(id) - 1].getInfo();
-	else
-		std::cout << "\nNext time enter a valid id :).\n" <<std::endl;
+	try
+	{
+		if(stoi(id) > 0 and stoi(id) < numContact + 1)
+			cont[stoi(id) - 1].getInfo();
+		else
+			std::cout << "\nPlease enter a valid id.\n" << std::endl;
+	}
+	catch (const std::invalid_argument &ia)
+	{
+		std::cerr << "\nInvalid argument: " << ia.what() << "\n\n";
+	}
 }
 
 void	PhoneBook::exit()
