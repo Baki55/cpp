@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 15:08:16 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/07 18:13:21 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/11 17:02:31 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	main(void)
 		else if(cmd == "EXIT")
 			myPhoneBook.exit();
 		else
-			std::cout << "Please enter a valid command." << std::endl;
+			std::cout << "\nPlease enter a valid command.\n" << std::endl;
 	}
 	return(1);
 }
