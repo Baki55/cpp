@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/11 16:12:16 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/11 16:38:43 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -59,7 +59,8 @@ void	PhoneBook::add()
 
 void	PhoneBook::search()
 {
-	int	i = 0, id = 0;
+	int	i = 0;
+	std::string	id;
 	std::cout << "\n|" << std::setw(10) << "Id" << "|" << std::setw(10) << "First name" << "|" << std::setw(10) << "Last name" << "|" << std::setw(10) << "Nickname" << "|" <<std::endl;
 	while(i < numContact)
 	{
@@ -67,9 +68,12 @@ void	PhoneBook::search()
 		cont[i].getContact();
 		i++;
 	}
-	std::cout << "\nPlease enter the contact id that you want to see informations.\n" <<std::endl;
+	std::cout << "\nPlease enter the contact id that you want to see informations: ";
 	std::cin >> id;
-	cont[id - 1].getInfo();
+	if(stoi(id) > 0 and stoi(id) < numContact + 1)
+		cont[stoi(id) - 1].getInfo();
+	else
+		std::cout << "\nNext time enter a valid id :).\n" <<std::endl;
 }
 
 void	PhoneBook::exit()
