@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 14:54:31 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/11 15:44:28 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/11 16:05:46 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	Contact::setContact(std::string s1, std::string s2, std::string s3, std::st
 	nickname = s3;
 	phoneNumber = s4;
 	darkestSecret = s5;
-	std::cout << "The contact is successfully added to your Phonebook." << std::endl;
+	std::cout << "\nThe contact is successfully added to your Phonebook.\n" << std::endl;
 }
 
 std::string	Contact::getStr(std::string str) const
@@ -41,10 +41,10 @@ void	Contact::getContact(void)
 
 void	Contact::getInfo(void)
 {
-	std::cout << "|  " << this->firstName << std::flush;
+	std::cout << "\n|  " << this->firstName << std::flush;
 	std::cout << "  |  " << this->lastName << std::flush;
 	std::cout << "  |  " << this->nickname << std::flush;
 	std::cout << "  |  " << this->phoneNumber << std::flush;
 	std::cout << "  |  " << this->darkestSecret << std::flush;
-	std::cout << "  |" << std::endl; 
+	std::cout << "  |\n" << std::endl; 
 }

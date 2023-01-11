@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/11 15:37:14 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/11 16:12:16 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@ PhoneBook::PhoneBook()
 	numContact = 0;
 	n = 7;
 	done = 0;
-	std::cout << "Welcome in your phone book.\nYou can choose between those three commands:" <<std::endl;
-	std::cout << "ADD - To add a contact\nSEARCH - To search for a contact\nEXIT - To exit your phone book" <<std::endl;
+	std::cout << "\nWelcome in your phone book.\n\nYou can choose between those three commands:" <<std::endl;
+	std::cout << "ADD - To add a contact\nSEARCH - To search for a contact\nEXIT - To exit your phone book\n" <<std::endl;
 }
 
 void	PhoneBook::add()
@@ -27,7 +27,7 @@ void	PhoneBook::add()
 	std::string	fN, lN, nN, pN, dS;
 	
 	std::cin.ignore();
-	std::cout << "Enter the first name: ";
+	std::cout << "\nEnter the first name: ";
 	std::getline(std::cin, fN);
 	std::cout << "Enter the last name: ";
 	std::getline(std::cin, lN);
@@ -60,20 +60,20 @@ void	PhoneBook::add()
 void	PhoneBook::search()
 {
 	int	i = 0, id = 0;
-	std::cout << "|" << std::setw(10) << "Id" << "|" << std::setw(10) << "First name" << "|" << std::setw(10) << "Last name" << "|" << std::setw(10) << "Nickname" << "|" <<std::endl;
+	std::cout << "\n|" << std::setw(10) << "Id" << "|" << std::setw(10) << "First name" << "|" << std::setw(10) << "Last name" << "|" << std::setw(10) << "Nickname" << "|" <<std::endl;
 	while(i < numContact)
 	{
 		std::cout << "|" << std::setw(10) << i + 1 << std::flush;
 		cont[i].getContact();
 		i++;
 	}
-	std::cout << "Please enter the contact id that you want to see informations." <<std::endl;
+	std::cout << "\nPlease enter the contact id that you want to see informations.\n" <<std::endl;
 	std::cin >> id;
 	cont[id - 1].getInfo();
 }
 
 void	PhoneBook::exit()
 {
-	std::cout << "Goodbye :)." << std::endl;
+	std::cout << "\nGoodbye :).\n" << std::endl;
 	done = 1;
 }
