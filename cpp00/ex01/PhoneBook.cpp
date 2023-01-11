@@ -1,16 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   PhoneBook.cpp                                      :+:      :+:    :+:   */
+/*   Phonebook.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/10 15:50:12 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/11 15:16:20 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "PhoneBook.hpp"
+#include <string>
 
 PhoneBook::PhoneBook()
 {
@@ -24,16 +25,18 @@ PhoneBook::PhoneBook()
 void	PhoneBook::add()
 {
 	std::string	fN, lN, nN, pN, dS;
+	
+	std::cin.ignore();
 	std::cout << "Enter the first name: ";
-	std::cin >> fN;
+	std::getline(std::cin, fN);
 	std::cout << "Enter the last name: ";
-	std::cin >> lN;
+	std::getline(std::cin, lN);
 	std::cout << "Enter the nickname: ";
-	std::cin >> nN;
+	std::getline(std::cin, nN);
 	std::cout << "Enter the phone number: ";
-	std::cin >> pN;
+	std::getline(std::cin, pN);
 	std::cout << "Enter the darkest secret: ";
-	std::cin >> dS;
+	std::getline(std::cin, dS);
 	if(numContact == 8)
 	{
 		if(n > 0)
