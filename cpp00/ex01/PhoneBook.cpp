@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/11 17:01:33 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/12 15:33:21 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ PhoneBook::PhoneBook()
 	numContact = 0;
 	n = 7;
 	done = 0;
-	std::cout << "\nWelcome in your phone book.\n\nYou can choose between those three commands:" <<std::endl;
-	std::cout << "ADD - To add a contact\nSEARCH - To search for a contact\nEXIT - To exit your phone book\n" <<std::endl;
+	std::cout << "\nWelcome in your phone book.\n\nYou can choose between those three commands: ADD - SEARCH - EXIT" <<std::endl;
+	std::cout << "\nADD - To add a contact\nSEARCH - To search for a contact\nEXIT - To exit your phone book\n" <<std::endl;
 }
 
 void	PhoneBook::add()
