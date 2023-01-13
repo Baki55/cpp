@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 15:50:39 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/13 15:54:59 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/13 16:10:51 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ class	Zombie
 {
 	std::string	name;
 public:
+	Zombie();
 	Zombie(std::string);
 	~Zombie();
 	void	setName(std::string);
