@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 15:50:39 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/12 16:33:43 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/13 15:35:04 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ public:
 	Zombie	*newZombie(std::string name);
 	void	randomChump(std::string name);
 };
+
+void	randomChump(std::string name);
 
 #endif
