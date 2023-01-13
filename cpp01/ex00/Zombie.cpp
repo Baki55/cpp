@@ -6,15 +6,15 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 16:15:57 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/12 16:34:53 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/13 15:40:22 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie::Zombie()
+Zombie::Zombie(std::string str)
 {
-	std::cout << "Zombie Constructor called" << std::endl;
+	this->name = str;
 }
 
 Zombie::~Zombie()
