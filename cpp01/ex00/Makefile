@@ -6,7 +6,7 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/12 15:43:30 by bkhatib           #+#    #+#              #
-#    Updated: 2023/01/12 16:27:41 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/01/13 15:32:13 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ all: $(NAME)
 
 $(NAME): 
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) Zombie.cpp main.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) Zombie.cpp randomChump.cpp main.cpp -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:
