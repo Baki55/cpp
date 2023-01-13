@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/13 15:29:35 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/13 15:38:45 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/13 15:54:31 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 
 void	randomChump(std::string name)
 {
-	Zombie	z;
-	z.setName(name);
+	Zombie	z(name);
 	z.annouce();
 }
