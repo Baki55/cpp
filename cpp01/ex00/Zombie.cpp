@@ -6,11 +6,16 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 16:15:57 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/13 15:40:22 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/13 16:14:31 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
+
+Zombie::Zombie()
+{
+	this->name = "(null)";
+}
 
 Zombie::Zombie(std::string str)
 {
