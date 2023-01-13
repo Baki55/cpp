@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 15:50:39 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/13 15:43:07 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/13 15:54:59 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,10 +23,9 @@ public:
 	~Zombie();
 	void	setName(std::string);
 	void	annouce(void) const;
-	Zombie	*newZombie(std::string name);
-	void	randomChump(std::string name);
 };
 
 void	randomChump(std::string name);
+Zombie	*newZombie(std::string name);
 
 #endif
