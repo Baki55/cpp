@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 15:50:39 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/14 12:25:13 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/14 12:28:51 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,5 +25,7 @@ public:
 	void	setName(std::string);
 	void	annouce(void) const;
 };
+
+Zombie	*zombieHorde(int N, std::string name);
 
 #endif
