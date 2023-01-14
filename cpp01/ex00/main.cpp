@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 16:26:26 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/13 15:36:51 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/14 11:57:54 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,11 @@
 
 int	main(void)
 {
-	randomChump("Baki");
+	Zombie	zombie[2];
+	
+	zombie[0].setName("Baki");
+	zombie[1].setName("Messi");
+	zombie[0].annouce();
+	zombie[1].annouce();
 	return (0);
 }
