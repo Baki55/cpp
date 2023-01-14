@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/12 16:15:57 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/14 11:51:48 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/14 13:42:02 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 Zombie::Zombie()
 {
 	this->name = "(null)";
+	std::cout << "Constructor called" << std::endl;
 }
 
 Zombie::Zombie(std::string str)
@@ -24,7 +25,7 @@ Zombie::Zombie(std::string str)
 
 Zombie::~Zombie()
 {
-	std::cout << "Destructor called on " << this->name << " the Zombie" << std::endl;
+	std::cout << "Destructor called on " << this->name << " the Zombie. Its address is: " << this << std::endl;
 }
 
 void	Zombie::annouce(void) const
