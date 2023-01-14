@@ -6,7 +6,7 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/14 12:20:25 by bkhatib           #+#    #+#              #
-#    Updated: 2023/01/14 12:21:16 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/01/14 13:01:03 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ all: $(NAME)
 
 $(NAME): 
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) Zombie.cpp main.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) Zombie.cpp zombieHorde.cpp main.cpp -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:
