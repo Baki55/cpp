@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 17:42:18 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/15 17:42:49 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/15 17:57:59 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class	HumanB
 public:
 	HumanB(std::string);
 	~HumanB();
-	attack();
+	void    attack();
 };
 
 #endif

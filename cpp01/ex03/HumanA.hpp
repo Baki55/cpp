@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 17:21:52 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/15 17:31:20 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/15 17:54:48 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class	HumanA
 public:
 	HumanA(std::string, Weapon);
 	~HumanA();
-	attack();
+	void	attack();
 };
 
 #endif

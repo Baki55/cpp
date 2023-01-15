@@ -6,11 +6,13 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 17:25:51 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/14 17:31:28 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/15 18:05:19 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Weapon.cpp"
+#include "Weapon.hpp"
+
+Weapon::Weapon() {}
 
 Weapon::Weapon(std::string str)
 {

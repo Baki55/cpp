@@ -6,7 +6,7 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/14 17:02:11 by bkhatib           #+#    #+#              #
-#    Updated: 2023/01/14 17:02:31 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/01/15 18:03:20 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ all: $(NAME)
 
 $(NAME): 
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) main.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) main.cpp HumanA.cpp Weapon.cpp -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:

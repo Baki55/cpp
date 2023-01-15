@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   HumanB.cpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/15 17:43:07 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/15 17:59:11 by bkhatib          ###   ########.fr       */
+/*   Created: 2023/01/15 17:45:13 by bkhatib           #+#    #+#             */
+/*   Updated: 2023/01/15 18:00:36 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "HumanA.hpp"
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string str)
+int main()
 {
-	std::cout << "Constructor called." << std::endl;
-	this->name = str;
-	std::cout << "My name is " << this->name << std::endl;
-}
-
-HumanB::~HumanB()
-{
-	std::cout << "Destructor called" << std::endl;
-}
-
-void	HumanB::attack()
-{
-	std::cout << this->name << " attacks with their " << this->myWeapon << std::endl;
+	{
+	Weapon club = Weapon("crude spiked club");
+	HumanA bob("Bob", club);
+	bob.attack();
+	club.setType("some other type of club");
+	bob.attack();
+	}
+	return 0;
 }

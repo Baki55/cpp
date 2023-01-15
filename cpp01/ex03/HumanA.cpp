@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 17:30:01 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/15 17:38:27 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/15 18:03:50 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,15 +17,15 @@ HumanA::HumanA(std::string str, Weapon myW)
 	std::cout << "Constructor called." << std::endl;
 	this->name = str;
 	this->myWeapon = myW;
-	std::cout << "My name is " << this->name << " and i have a " << this->myWeapon <<std::endl;
+	std::cout << "My name is " << this->name <<std::endl;
 }
 
 HumanA::~HumanA()
 {
-	std::cout << "Destructor called" std::endl;
+	std::cout << "Destructor called" << std::endl;
 }
 
-HumanA::attack()
+void	HumanA::attack()
 {
-	std::cout << this->name << " attacks with their " << this->myWeapon << std::endl;
+	std::cout << this->name << " attacks with their " << std::endl;
 }
