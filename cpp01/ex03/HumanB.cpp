@@ -6,25 +6,25 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 17:43:07 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/15 17:59:11 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/16 17:24:28 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanB.hpp"
 
-HumanB::HumanB(std::string str)
+HumanB::HumanB(std::string str) : name(str)
 {
-	std::cout << "Constructor called." << std::endl;
-	this->name = str;
-	std::cout << "My name is " << this->name << std::endl;
+	this->myWeapon.setType(NULL);
 }
 
-HumanB::~HumanB()
-{
-	std::cout << "Destructor called" << std::endl;
-}
+HumanB::~HumanB(){}
 
 void	HumanB::attack()
 {
-	std::cout << this->name << " attacks with their " << this->myWeapon << std::endl;
+	std::cout << this->name << " attacks with their " << this->myWeapon.getType() << std::endl;
+}
+
+void	HumanB::setWeapon(Weapon &myW)
+{
+	this->myWeapon = myW;
 }
