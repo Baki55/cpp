@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/21 16:10:19 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/21 16:15:19 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/01/21 16:20:00 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class	Sed
 	std::string	inFile, outFile;
 public:
 	Sed(std::string);
-	std::string	replace(std::string, std::string);
+	void	replace(std::string, std::string);
 }
 
 #endif
