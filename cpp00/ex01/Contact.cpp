@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 14:54:31 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/11 16:05:46 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/02/27 12:04:17 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ std::string	Contact::getStr(std::string str) const
 	return str;
 }
 
-void	Contact::getContact(void)
+void	Contact::getContact(void) const
 {
 	std::cout << "|" << std::setw(10) << this->getStr(this->firstName) << std::flush;
 	std::cout << "|" << std::setw(10) << this->getStr(this->lastName) << std::flush;
@@ -39,7 +39,7 @@ void	Contact::getContact(void)
 	std::cout << "|" << std::endl;
 }
 
-void	Contact::getInfo(void)
+void	Contact::getInfo(void) const
 {
 	std::cout << "\n|  " << this->firstName << std::flush;
 	std::cout << "  |  " << this->lastName << std::flush;

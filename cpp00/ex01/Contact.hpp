@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 13:28:51 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/11 15:31:23 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/02/27 12:03:36 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ class	Contact
 public:
 	Contact();
 	void	setContact(std::string, std::string, std::string, std::string, std::string);
-	void	getContact(void);
-	void	getInfo(void);
+	void	getContact(void) const;
+	void	getInfo(void) const;
 	std::string	getStr(std::string str) const;
 };
 
