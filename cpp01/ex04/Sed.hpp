@@ -1,28 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   Sed.hpp                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/01/17 14:30:43 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/21 16:43:28 by bkhatib          ###   ########.fr       */
+/*   Created: 2023/01/21 16:10:19 by bkhatib           #+#    #+#             */
+/*   Updated: 2023/01/21 16:33:27 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Sed.hpp"
+#ifndef SED_HPP
+#define SED_HPP
 
-int	main(int argc, char **argv)
+#include <iostream>
+#include <fstream>
+
+class	Sed
 {
-	if (argc != 4)
-	{
-		std::cerr << "Usage: ./Sed <filename> <str_to_find> <str_to_replace_with>" << std::endl;
-		exit(EXIT_FAILURE);
-	}
-	else
-	{
-		Sed	mySed(argv[1]);
-		mySed.replace(argv[2], argv[3]);
-	}
-	return(EXIT_SUCCESS);
-}
+	std::string	inFile, outFile;
+public:
+	Sed(std::string);
+	void	replace(std::string, std::string);
+};
+
+#endif
