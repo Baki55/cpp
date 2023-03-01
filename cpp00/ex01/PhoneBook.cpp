@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/02/27 12:05:50 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/01 14:03:19 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,6 +81,10 @@ void	PhoneBook::search() const
 	catch (const std::invalid_argument &ia)
 	{
 		std::cerr << "\nInvalid argument: " << ia.what() << "\n\n";
+	}
+	catch (const std::out_of_range &oor)
+	{
+		std::cerr << "\nOut of range error: " << oor.what() <<"\n\n";
 	}
 }
 
