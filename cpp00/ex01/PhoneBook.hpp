@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/04 16:49:47 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/02/27 12:06:03 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/03 15:16:05 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ public:
 	void	add();
 	void	search() const;
 	void	exit();
+	std::string	isEmpty(std::string);
 };
 
 #endif
