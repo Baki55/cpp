@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/07 16:43:56 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/01 14:03:19 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/03 15:17:50 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,21 +23,29 @@ PhoneBook::PhoneBook()
 	std::cout << "\nADD - To add a contact\nSEARCH - To search for a contact\nEXIT - To exit your phone book\n" <<std::endl;
 }
 
+std::string	PhoneBook::isEmpty(std::string str)
+{
+	std::string	s;
+	do
+	{
+		std::cout << str;
+		std::getline(std::cin, s);
+	}
+	while (s.empty());
+	return (s);
+}
+
 void	PhoneBook::add()
 {
 	std::string	fN, lN, nN, pN, dS;
-	
+
 	std::cin.ignore();
-	std::cout << "\nEnter the first name: ";
-	std::getline(std::cin, fN);
-	std::cout << "Enter the last name: ";
-	std::getline(std::cin, lN);
-	std::cout << "Enter the nickname: ";
-	std::getline(std::cin, nN);
-	std::cout << "Enter the phone number: ";
-	std::getline(std::cin, pN);
-	std::cout << "Enter the darkest secret: ";
-	std::getline(std::cin, dS);
+	
+	fN = isEmpty("Enter the first name: ");
+	lN = isEmpty("Enter the last name: ");
+	nN = isEmpty("Enter the nickname: ");
+	pN = isEmpty("Enter the phone number: ");
+	dS = isEmpty("Enter the darkest secret: ");
 	if(numContact == 8)
 	{
 		if(n > 0)
