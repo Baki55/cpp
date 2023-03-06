@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/06 14:39:04 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/06 14:48:34 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/06 18:47:07 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,7 @@ public:
 	~Harl();
 	void	complain(std::string level);
 };
+
+typedef void (Harl::*t_func) (void);
 
 #endif
