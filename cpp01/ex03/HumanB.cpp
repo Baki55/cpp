@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/15 17:43:07 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/01/17 14:16:04 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/06 12:30:02 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ HumanB::HumanB(std::string str) : name(str)
 
 HumanB::~HumanB(){}
 
-void	HumanB::attack()
+void	HumanB::attack() const
 {
 	std::cout << this->name << " attacks with their " << this->myWeapon->getType() << std::endl;
 }
