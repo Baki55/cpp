@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 17:25:51 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/06 12:28:32 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/06 12:35:39 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Weapon::Weapon(std::string str)
 	this->type = str;
 }
 
-const std::string	&Weapon::getType(void)
+const std::string	Weapon::getType(void)
 {
 	return(this->type);
 }

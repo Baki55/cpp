@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/01/14 17:03:40 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/06 12:28:44 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/06 12:35:42 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class Weapon
 public:
 	Weapon();
 	Weapon(std::string);
-	const std::string	&getType(void);
+	const std::string	getType(void);
 	void	setType(std::string);
 };
 
