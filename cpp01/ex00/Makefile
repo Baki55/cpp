@@ -6,11 +6,12 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/01/12 15:43:30 by bkhatib           #+#    #+#              #
-#    Updated: 2023/01/13 16:00:42 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/03/06 12:03:14 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	= Zombie
+SRCS	= Zombie.cpp randomChump.cpp newZombie.cpp main.cpp
 	
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98
@@ -28,7 +29,7 @@ all: $(NAME)
 
 $(NAME): 
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) Zombie.cpp randomChump.cpp newZombie.cpp main.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) $(SRCS) -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:
