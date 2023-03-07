@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 10:15:33 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/07 11:04:54 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/07 11:10:10 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ class	FixedPoint
 	int static const	fractionalBits = 8;
 public:
 	FixedPoint();
-	FixedPoint(cont Fixed &rhs);
+	FixedPoint(const Fixed &rhs);
 	Fixed& operator=(const Fixed &rhs);
 	~FixedPoint();
 	int	getRawBits(void) const;
