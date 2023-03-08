@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 13:48:53 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/08 15:08:41 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/08 19:32:23 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,5 +44,5 @@ int	FixedPoint::getRawBits(void) const
 
 void	FixedPoint::setRawBits(int const raw)
 {
-	fixedPointValue = raw;
+	this->fixedPointValue = raw;
 }
