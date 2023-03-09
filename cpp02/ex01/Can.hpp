@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 10:15:33 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/09 20:11:33 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/09 20:19:04 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,14 @@ class	Fixed
 public:
 	Fixed();
 	Fixed(const Fixed &rhs);
+	Fixed(const int n);
+	Fixed(const float n);
 	~Fixed();
 	Fixed& operator=(const Fixed &rhs);
 	int	getRawBits(void) const;
 	void	setRawBits(int const raw);
+	float	toFloat(void) const;
+	int	toInt(void) const;
 };
 
 #endif
