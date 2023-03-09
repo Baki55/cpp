@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/08 14:49:05 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/08 14:51:37 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/09 20:11:30 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int main( void )
 {
-	FixedPoint a;
-	FixedPoint b(a);
-	FixedPoint c;
+	Fixed a;
+	Fixed b(a);
+	Fixed c;
 	c = b;
 	std::cout << a.getRawBits() << std::endl;
 	std::cout << b.getRawBits() << std::endl;
