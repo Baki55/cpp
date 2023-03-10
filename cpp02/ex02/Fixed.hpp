@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 10:15:33 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/10 15:30:17 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/10 16:00:47 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ public:
 	Fixed(const float n);
 	~Fixed();
 
-	bool operator=(const Fixed &rhs) const;
+	Fixed& operator=(const Fixed &rhs);
 	bool operator>(const Fixed &rhs) const;
 	bool operator<(const Fixed &rhs) const;
 	bool operator>=(const Fixed &rhs) const;
