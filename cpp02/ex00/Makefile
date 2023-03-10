@@ -6,11 +6,11 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/03/08 14:47:26 by bkhatib           #+#    #+#              #
-#    Updated: 2023/03/08 14:48:17 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/03/10 15:03:28 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= MyFirstCanon
+NAME	= Fixed
 	
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98
@@ -26,7 +26,7 @@ all: $(NAME)
 
 $(NAME): 
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) main.cpp Can.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) main.cpp Fixed.cpp -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:
