@@ -1,24 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/03/13 15:06:44 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 19:24:53 by bkhatib          ###   ########.fr       */
+/*   Created: 2023/03/15 20:29:25 by bkhatib           #+#    #+#             */
+/*   Updated: 2023/03/15 20:34:51 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "FragTrap.hpp"
 
-int	main(void)
+FragTrap::FragTrap()
 {
-	ClapTrap ct("Baki");
+	std::cout << "Default FragTrap constructor called." << std::endl;
+}
 
-	ct.attack("Daki");
-	ct.takeDamage(20);
-	ct.beRepaired(10);
+FragTrap::FragTrap(std::string str): ClapTrap(str)
+{
+	std::cout << "Second FragTrap constructor called" << std::endl;
+}
 
-	return(EXIT_SUCCESS);
+FragTrap::~FragTrap()
+{
+	std::cout << "Default FragTrap called." << std::endl;
+}
+
+void	FragTrap::highFivesGuys()
+{
+	std::cout << "High fives guys ?" << std::endl;
 }

@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 13:52:20 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 19:23:51 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/03/15 19:48:01 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ ClapTrap::ClapTrap()
 	std::cout << "Default constructor called." << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name): name(name), hitPoints(10), energyPoints(10), attackDamage(0)
+ClapTrap::ClapTrap(std::string name): name(name), hitPoints(100), energyPoints(50), attackDamage(20)
 {
 	std::cout << "Second constructor called." << std::endl;
 }
