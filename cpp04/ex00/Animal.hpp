@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:02:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/17 19:12:12 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/17 19:31:15 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,5 @@ public:
 	~Animal();
 	Animal	&operator=(const Animal &rhs);
 };
+
+#endif
