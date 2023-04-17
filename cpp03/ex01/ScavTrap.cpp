@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 19:50:31 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 20:10:16 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/17 18:35:03 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ ScavTrap::ScavTrap()
 
 ScavTrap::ScavTrap(std::string str): ClapTrap(str)
 {
-	std::cout << "Second ScavTrap construcor called." << std::endl;
+	std::cout << "Second ScavTrap constructor called." << std::endl;
 }
 
 ScavTrap::~ScavTrap()
