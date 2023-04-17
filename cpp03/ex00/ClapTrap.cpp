@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 13:52:20 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 19:23:51 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/17 18:28:19 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ ClapTrap::ClapTrap(std::string name): name(name), hitPoints(10), energyPoints(10
 
 ClapTrap::ClapTrap(ClapTrap &rhs)
 {
-	std::cout << "Copy construcor called." << std::endl;
+	std::cout << "Copy constructor called." << std::endl;
 	*this = rhs;
 }
 
