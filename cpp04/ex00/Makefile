@@ -6,7 +6,7 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/17 18:58:50 by bkhatib           #+#    #+#              #
-#    Updated: 2023/04/17 18:59:35 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/04/17 19:01:31 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ all: $(NAME)
 
 $(NAME): 
 	@printf "$(CURSIVE)$(GRAY) 	- Compiling $(NAME)... $(RESET)\n"
-	@ $(CC) $(FLAGS) main.cpp Polymorphisme.cpp -o $(NAME)
+	@ $(CC) $(FLAGS) main.cpp Animal.cpp -o $(NAME)
 	@printf "$(GREEN)    - Executable ready.\n$(RESET)"
 
 clean:
