@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 20:29:25 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 20:34:51 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/17 18:48:22 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ FragTrap::FragTrap(std::string str): ClapTrap(str)
 
 FragTrap::~FragTrap()
 {
-	std::cout << "Default FragTrap called." << std::endl;
+	std::cout << "Default destructor FragTrap called." << std::endl;
 }
 
 void	FragTrap::highFivesGuys()
