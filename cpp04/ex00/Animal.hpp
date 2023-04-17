@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:02:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/17 19:31:15 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/17 19:54:31 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 #include <iostream>
 
-class Animal
+class	Animal
 {
 protected:
 	std::string	type;
