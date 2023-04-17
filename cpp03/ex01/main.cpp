@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 15:06:44 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 19:57:31 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/17 18:40:42 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	main(void)
 	st.attack("Daki");
 	st.takeDamage(20);
 	st.beRepaired(10);
+	st.guardGate();
 
 	return(EXIT_SUCCESS);
 }
