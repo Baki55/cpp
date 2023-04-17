@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:28:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/17 19:30:27 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/17 19:40:09 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,9 @@
 int	main(void)
 {
 	Animal a("Baki");
+	Animal b;
+	
+	b = a;
 	
 	return(EXIT_SUCCESS);
 }
