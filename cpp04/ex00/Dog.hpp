@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:49:12 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 13:25:56 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 16:13:28 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
 	Dog(Dog &rhs);
 	~Dog();
 	Dog	&operator=(const Dog &rhs);
-	void makeSound();
+	void makeSound() const;
 };
 
 #endif

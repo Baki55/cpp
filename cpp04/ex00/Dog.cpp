@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:57:13 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 13:28:52 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 16:13:34 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Dog &Dog::operator=(const Dog &rhs)
 	return(*this);
 }
 
-void	Dog::makeSound()
+void	Dog::makeSound() const
 {
 	std::cout << "Waf Waf :)" << std::endl;
 }

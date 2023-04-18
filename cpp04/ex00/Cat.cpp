@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:46:42 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 13:48:20 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 16:13:19 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Cat &Cat::operator=(const Cat &rhs)
 	return(*this);
 }
 
-void	Cat::makeSound()
+void	Cat::makeSound() const
 {
 	std::cout << "Miaou Miaou :)" << std::endl;
 }

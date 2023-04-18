@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:41:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 13:44:46 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 16:13:09 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ public:
 	Cat(Cat &rhs);
 	~Cat();
 	Cat	&operator=(const Cat &rhs);
-	void makeSound();
+	void makeSound() const;
 };
 
 #endif
