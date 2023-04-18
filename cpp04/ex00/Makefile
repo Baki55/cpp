@@ -6,11 +6,11 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/04/17 18:58:50 by bkhatib           #+#    #+#              #
-#    Updated: 2023/04/18 13:50:44 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/04/18 16:10:44 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME	= Polymorphisme
+NAME	= Animal
 	
 CC		= c++
 FLAGS	= -Wall -Wextra -Werror -std=c++98
