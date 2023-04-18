@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:13:11 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 16:21:50 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 18:11:44 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ Animal::Animal(Animal &rhs)
 
 Animal::~Animal()
 {
-	std::cout << "Default constructor called." << std::endl;
+	std::cout << "Default destructor called." << std::endl;
 }
 
 Animal &Animal::operator=(const Animal &rhs)
