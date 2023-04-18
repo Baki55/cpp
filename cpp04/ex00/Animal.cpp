@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:13:11 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 16:10:21 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 16:21:50 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,11 @@ Animal &Animal::operator=(const Animal &rhs)
 	std::cout << "Copy assignement operator called." << std::endl;
 	this->type = rhs.type;
 	return(*this);
+}
+
+void Animal::makeSound( void ) const
+{
+    std::cout << "Animal makeSound called" << std::endl;
 }
 
 std::string	Animal::getType() const
