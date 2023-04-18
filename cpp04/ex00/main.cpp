@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:28:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 18:27:46 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 18:29:39 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,13 @@ int main()
 	const WrongAnimal *wrong = new WrongAnimal();
     const WrongAnimal *wrongCat = new WrongCat();
 
-    std::cout << "Wrong Type: " << wrong->getType() << " " << std::endl;
-    std::cout << "WrongCat Type: " << wrongCat->getType() << " " << std::endl;
-    wrong->makeSound();
-    wrongCat->makeSound();
+	std::cout << "Wrong Type: " << wrong->getType() << " " << std::endl;
+	std::cout << "WrongCat Type: " << wrongCat->getType() << " " << std::endl;
+	wrong->makeSound();
+	wrongCat->makeSound();
 
-    delete  wrong;
-    delete  wrongCat;
+	delete  wrong;
+	delete  wrongCat;
 	
 	return(EXIT_SUCCESS);
 }
