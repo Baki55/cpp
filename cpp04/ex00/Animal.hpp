@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:02:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 13:32:09 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/18 13:42:57 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 #define ANIMAL_HPP
 
 #include <iostream>
+#include "Dog.hpp"
+#include "Cat.hpp"
 
 class	Animal
 {
