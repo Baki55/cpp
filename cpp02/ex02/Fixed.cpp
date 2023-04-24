@@ -6,28 +6,24 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/07 13:48:53 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/10 16:09:44 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/25 00:11:22 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-Fixed::Fixed() : fixedPointValue(0)
-{}
+Fixed::Fixed() : fixedPointValue(0) {}
 
 Fixed::Fixed(const Fixed &rhs)
 {
 	*this = rhs;
 }
 
-Fixed::Fixed(const int n) : fixedPointValue(n << fractionalBits)
-{}
+Fixed::Fixed(const int n) : fixedPointValue(n << fractionalBits) {}
 
-Fixed::Fixed(const float n) : fixedPointValue(std::roundf(n * (1 << fractionalBits)))
-{}
+Fixed::Fixed(const float n) : fixedPointValue(std::roundf(n * (1 << fractionalBits))) {}
 
-Fixed::~Fixed()
-{}
+Fixed::~Fixed() {}
 
 Fixed& Fixed::operator=(const Fixed &rhs)
 {
@@ -57,7 +53,6 @@ bool Fixed::operator==(const Fixed &rhs) const
 
 bool Fixed::operator!=(const Fixed &rhs) const
 {
-	std::cout << "!= operator called" << std::endl;
 	return(this->getRawBits() != rhs.getRawBits());
 }
 
