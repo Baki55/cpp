@@ -6,25 +6,25 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 13:52:20 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 20:25:32 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/25 16:54:02 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ClapTrap.hpp"
 
-ClapTrap::ClapTrap()
+ClapTrap::ClapTrap(): name("ClopTrop"), hitPoints(10), energyPoints(10), attackDamage(0)
 {
 	std::cout << "Default constructor called." << std::endl;
 }
 
-ClapTrap::ClapTrap(std::string name): name(name), hitPoints(100), energyPoints(100), attackDamage(30)
+ClapTrap::ClapTrap(std::string name): name(name), hitPoints(10), energyPoints(10), attackDamage(0)
 {
 	std::cout << "Second constructor called." << std::endl;
 }
 
 ClapTrap::ClapTrap(ClapTrap &rhs)
 {
-	std::cout << "Copy construcor called." << std::endl;
+	std::cout << "Copy constructor called." << std::endl;
 	*this = rhs;
 }
 
@@ -73,5 +73,6 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	{
 		std::cout << "ClapTrap " << name << " get " << amount << " of health." << std::endl;
 		energyPoints -= 1;
+		hitPoints += amount;
 	}
 }
