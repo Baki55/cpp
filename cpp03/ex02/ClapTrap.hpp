@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 13:44:05 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 20:21:00 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/25 17:43:33 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 class ClapTrap
 {
+protected:
 	std::string	name;
 	unsigned int	hitPoints, energyPoints, attackDamage;
 public:
