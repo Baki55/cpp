@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/13 13:52:20 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/25 16:41:44 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/25 16:54:02 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -73,5 +73,6 @@ void	ClapTrap::beRepaired(unsigned int amount)
 	{
 		std::cout << "ClapTrap " << name << " get " << amount << " of health." << std::endl;
 		energyPoints -= 1;
+		hitPoints += amount;
 	}
 }
