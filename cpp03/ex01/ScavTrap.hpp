@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/03/15 19:45:08 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/03/15 20:27:08 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/25 17:15:32 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@
 class ScavTrap: public ClapTrap
 {
 public:
-	ScavTrap();
 	ScavTrap(std::string);
 	~ScavTrap();
+	void attack(const std::string &target);
 	void guardGate();
 };
 
