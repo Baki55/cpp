@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:49:12 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 16:13:28 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/27 15:47:04 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 
 class	Dog : public Animal
 {
+	Brain		*brain;
 public:
 	Dog();
 	Dog(Dog &rhs);
