@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/18 13:46:42 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/27 15:30:35 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/27 15:51:00 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,14 @@
 Cat::Cat() : Animal("Cat")
 {
 	std::cout << "Cat default constructor called." << std::endl;
+	try
+	{
+		this->brain = new Brain();
+	}
+	catch (const std::bad_alloc& e)
+	{
+		std::cout << "Memory Allocation failed : " << e.what() << std::endl;
+	}
 }
 
 Cat::Cat(Cat &rhs)
@@ -26,6 +34,7 @@ Cat::Cat(Cat &rhs)
 Cat::~Cat()
 {
 	std::cout << "Cat destructor called." << std::endl;
+	delete this->brain;
 }
 
 Cat &Cat::operator=(const Cat &rhs)
