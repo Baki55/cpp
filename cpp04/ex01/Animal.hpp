@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:02:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 16:23:42 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/27 15:54:14 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 #define ANIMAL_HPP
 
 #include <iostream>
+#include "Brain.hpp"
 
 class	Animal
 {

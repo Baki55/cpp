@@ -6,32 +6,40 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:57:13 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/18 16:13:34 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/27 15:51:04 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Dog.hpp"
 
-Dog::Dog()
+Dog::Dog() : Animal("Dog")
 {
-	std::cout << "Default Dog constructor called." << std::endl;
-	this->type = "Dog";
+	std::cout << "Dog default constructor called." << std::endl;
+	try
+	{
+		this->brain = new Brain();
+	}
+	catch (const std::bad_alloc& e)
+	{
+		std::cout << "Memory Allocation failed : " << e.what() << std::endl;
+	}
 }
 
 Dog::Dog(Dog &rhs)
 {
-	std::cout << "Copy constructor called." << std::endl;
+	std::cout << "Dog copy constructor called." << std::endl;
 	*this = rhs;
 }
 
 Dog::~Dog()
 {
-	std::cout << "Default dog destructor called." << std::endl;
+	std::cout << "Dog destructor called." << std::endl;
+	delete this->brain;
 }
 
 Dog &Dog::operator=(const Dog &rhs)
 {
-	std::cout << "Copy assignement operator called." << std::endl;
+	std::cout << "Dog copy assignement operator called." << std::endl;
 	this->type = rhs.type;
 	return(*this);
 }
