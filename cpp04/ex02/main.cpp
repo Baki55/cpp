@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 19:28:37 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/04/19 15:23:28 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/04/29 17:55:44 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int main( void )
 {
     const Animal* j = new Dog();
     const Animal* i = new Cat();
+
+	Animal	test;
 
     delete j;//should not create a leak
     delete i;
