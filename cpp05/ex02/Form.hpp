@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 14:49:51 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/06/06 12:14:59 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/06/06 14:58:54 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ private:
 public:
 	Form(const std::string name, int gradeToSign, int gradeToExec);
 	Form(const Form &rhs);
-	~Form();
+	virtual ~Form();
 	
 	Form &operator=(const Form &rhs);
 
@@ -37,7 +37,9 @@ public:
 	int getGradeToExec() const;
 
 	void beSigned(const Bureaucrat &bureaucrat);
-
+	
+	virtual void	execute(const Bureaucrat &executor) const = 0;
+	
 	class GradeTooHighException: public std::exception
 	{
 	public:

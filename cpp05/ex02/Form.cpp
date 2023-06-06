@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Form.cpp                                           :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/06/06 14:59:29 by bkhatib           #+#    #+#             */
+/*   Updated: 2023/06/06 14:59:33 by bkhatib          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Form.hpp"
 
 Form::Form(const std::string name, int gradeToSign, int gradeToExec): name(name), isSigned(0), gradeToSign(gradeToSign), gradeToExec(gradeToExec)
