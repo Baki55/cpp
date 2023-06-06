@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/02 11:52:14 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/06/06 12:01:41 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/06/06 15:34:53 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,8 @@ public:
 
 	void signForm(Form &form);
 
+	void	executeForm(const Form &form) const;
+	
 	class GradeTooHighException : public std::exception
 	{
 	public:
