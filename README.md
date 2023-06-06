@@ -2,5 +2,5 @@
 First C++ project in 42 cursus.
 
 
-Ressources:
+Documentation:
   - https://cplusplus.com/doc/tutorial/
