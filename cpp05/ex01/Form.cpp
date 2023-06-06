@@ -1,6 +1,6 @@
 #include "Form.hpp"
 
-Form::Form(const std::string name, int gradeToSign, int gradeToExec): name(name), gradeToSign(gradeToSign), gradeToExec(getGradeToExec), isSigned(0)
+Form::Form(const std::string name, int gradeToSign, int gradeToExec): name(name), isSigned(0), gradeToSign(gradeToSign), gradeToExec(gradeToExec)
 {
 	if(gradeToSign < 1)
 		throw Form::GradeTooHighException();
@@ -12,19 +12,19 @@ Form::Form(const std::string name, int gradeToSign, int gradeToExec): name(name)
 		throw Form::GradeTooLowException();
 }
 
-Form::Form(const Form &rhs): name(rhs.getName()), isSigned(rhs.getIsSigned()), gradeToSign(rhs.gradeToSign()), gradeToExec(rhs.gradeToExec()) {}
+Form::Form(const Form &rhs): name(rhs.getName()), isSigned(rhs.getIsSigned()), gradeToSign(rhs.getGradeToSign()), gradeToExec(rhs.getGradeToExec()) {}
 
-Form &operator=(const Form &rhs)
+Form &Form::operator=(const Form &rhs)
 {
-	this.name = rhs.getName();
-	this.isSigned = rhs.getIsSigned();
-	this.gradeToSign = rhs.gradeToSign();
-	this.gradeToExec = rhs.gradeToExec();
+	name = rhs.getName();
+	isSigned = rhs.getIsSigned();
+	gradeToSign = rhs.getGradeToSign();
+	gradeToExec = rhs.getGradeToExec();
 	return(*this);
 }
 std::string Form::getName() const
 {
-	return(this.name);
+	return(name);
 }
 
 bool Form::getIsSigned() const
@@ -42,7 +42,7 @@ int Form::getGradeToExec() const
 	return(gradeToExec);
 }
 
-void beSigned::Form(const Bureaucrat &bureaucrat)
+void Form::beSigned(const Bureaucrat &bureaucrat)
 {
 	if(gradeToSign < bureaucrat.getGrade())
 		throw Form::GradeTooLowException();
@@ -55,6 +55,6 @@ std::ostream &operator<<(std::ostream &o, const Form &rhs)
 	o << "------------- Form Info -------------" << std::endl;
 	o << "Form name: " << rhs.getName() << std::endl
 	<< "Grade to sign: " << rhs.getGradeToSign() << std::endl
-	<< "Grade to execute: " << rhs.getGradeToExecute();
+	<< "Grade to execute: " << rhs.getGradeToExec();
 	return(o);
 }

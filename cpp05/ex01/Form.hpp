@@ -6,19 +6,21 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/05 14:49:51 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/06/05 16:10:07 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/06/06 12:14:59 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FORM_HPP
 #define FORM_HPP
 
-#include <iostream>
+#include "Bureaucrat.hpp"
+
+class Bureaucrat;
 
 class Form
 {
 private:
-	const std::string name;
+	std::string name;
 	bool isSigned;
 	int gradeToSign, gradeToExec;
 	Form();
