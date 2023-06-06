@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 15:05:15 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/06/06 15:08:10 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/06/06 15:16:36 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ private:
 	ShrubberyCreationForm();
 public:
 	ShrubberyCreationForm(const std::string &target);
-	ShrubberyCreationForm(const ShrubberyCreationForm src);
+	ShrubberyCreationForm(const ShrubberyCreationForm &src);
 	~ShrubberyCreationForm();
 
 	ShrubberyCreationForm &operator=(ShrubberyCreationForm &rhs);
