@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 16:42:16 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/06/06 16:42:19 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/25 17:52:53 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int main( void )
 {
 
     try {
-        Bureaucrat bureaucrat("ash", 2); // error with 200
+        Bureaucrat bureaucrat("Bk", 2); // error with 200
         ShrubberyCreationForm form1("Shrubbery");
         RobotomyRequestForm form2("Robotomy");
         PresidentialPardonForm form3("President");
