@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 16:36:01 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/25 17:27:34 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/25 17:46:41 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ void	Bureaucrat::signForm( Form& form )
 	try
 	{
 		form.beSigned( *this );
-		std::cout << *this << " signed " << form.getName() << std::endl;
+		std::cout << _name << " signed " << form.getName() << std::endl;
 	}
 	catch (Form::GradeTooLowException &e)
 	{
