@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Form.hpp                                           :+:      :+:    :+:   */
+/*   AForm.hpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,14 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FORM_HPP
-#define FORM_HPP
+#ifndef AForm_HPP
+#define AForm_HPP
 
 #include "Bureaucrat.hpp"
 
 class Bureaucrat;
 
-class Form
+class AForm
 {
 private:
     const std::string   _name;
@@ -25,14 +25,14 @@ private:
     const int           _gradeToSign;
     const int           _gradeToExecute;
 
-    Form();
+    AForm();
 
 public:
-    Form( const std::string& name, int gradeToSign, int gradeToExecute );
-    Form( const Form& src );
-    virtual    ~Form();
+    AForm( const std::string& name, int gradeToSign, int gradeToExecute );
+    AForm( const AForm& src );
+    virtual    ~AForm();
 
-    Form&   operator=( const Form& rhs );
+    AForm&   operator=( const AForm& rhs );
 
     std::string getName() const;
     bool        getSigned() const;
@@ -58,6 +58,6 @@ public:
     };
 };
 
-std::ostream&   operator<<( std::ostream& o, const Form& rhs );
+std::ostream&   operator<<( std::ostream& o, const AForm& rhs );
 
-#endif // FORM_HPP
+#endif // AForm_HPP
