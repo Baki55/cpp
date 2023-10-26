@@ -6,7 +6,7 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/06 16:24:34 by bkhatib           #+#    #+#              #
-#    Updated: 2023/06/06 16:45:34 by bkhatib          ###   ########.fr        #
+#    Updated: 2023/10/26 11:08:37 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,5 +49,7 @@ clean:
 fclean: clean
 	@$(RM) $(NAME)
 	@printf "$(YELLOW)    - Executable removed.$(RESET)\n"
+	@if [ -a *_shrubbery ]; then rm *_shrubbery; fi;
+	@printf "$(YELLOW)    - Shrubbery file removed.$(RESET)\n"
 
 re: fclean all
