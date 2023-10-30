@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 16:46:14 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/06/06 16:46:15 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/26 11:07:53 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,12 +41,12 @@ Form*   Intern::makeForm( std::string name, std::string target ) {
         new ShrubberyCreationForm( target )
     };
     
-    for ( int i(0); i < 3; i++ ) {
+    for ( int i = 0; i < 3; i++ ) {
         if ( name == formNames[i] ) {
             std::cout << "Intern creates " << name << std::endl;
             return forms[i];
         }
     }
     std::cout << "Intern cannot create " << name << " form" << std::endl;
-    return nullptr;
+    return 0;
 }

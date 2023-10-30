@@ -6,15 +6,15 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 16:43:00 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/25 17:59:28 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/26 14:50:02 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ShrubberyCreationForm.hpp"
 
-ShrubberyCreationForm::ShrubberyCreationForm( const std::string& target ) : Form( "ShrubberyCreationForm", 145, 137 ), _target( target ) {}
+ShrubberyCreationForm::ShrubberyCreationForm( const std::string& target ) : AForm( "ShrubberyCreationForm", 145, 137 ), _target( target ) {}
 
-ShrubberyCreationForm::ShrubberyCreationForm( const ShrubberyCreationForm& src ) : Form( src ), _target( src._target ) {}
+ShrubberyCreationForm::ShrubberyCreationForm( const ShrubberyCreationForm& src ) : AForm( src ), _target( src._target ) {}
 
 ShrubberyCreationForm::~ShrubberyCreationForm() {}
 
@@ -25,9 +25,9 @@ ShrubberyCreationForm& ShrubberyCreationForm::operator=( ShrubberyCreationForm& 
 
 void    ShrubberyCreationForm::execute( const Bureaucrat& executor ) const {
     if ( this->getSigned() == false )
-        throw Form::NotSignedException();
+        throw AForm::NotSignedException();
     else if ( executor.getGrade() > this->getGradeToExecute() ) {
-        throw Form::GradeTooLowException();
+        throw AForm::GradeTooLowException();
     }
 
     std::ofstream file( this->_target + "_shrubbery" );

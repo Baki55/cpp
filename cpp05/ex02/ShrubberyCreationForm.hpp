@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/06/06 16:43:06 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/06/06 16:43:08 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/26 14:47:18 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 #include "Form.hpp"
 #include <fstream>
 
-class ShrubberyCreationForm : public Form {
+class ShrubberyCreationForm : public AForm {
 
 private:
     const std::string   _target;
