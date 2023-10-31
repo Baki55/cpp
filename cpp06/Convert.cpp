@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 18:29:25 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/29 20:28:11 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/31 16:09:51 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,32 @@ void	ScalarConverter::setD(double d)
 void	ScalarConverter::setStr(std::string str)
 {
 	this->_str = str;
+}
+
+bool	ScalarConverter::isChar(void) const
+{
+	return(_str.length() == 1 && std::isalpha(_str[0]))
+}
+
+bool	ScalarConverter::isInt(void) const
+{
+	int	i = 0;
+	while(_str[i] == '+' || _str[i] == '-')
+		i++;
+	while(i < (int)_str.length())
+	{
+		if(!isdigit(_str[i]))
+			return(0);
+		else
+			i++;
+	}
+	return(1);
+}
+
+bool	ScalarConverter::isFloat(void)
+{
+	std::istringstream	iss(_str);
+	float	f;
+	iss >> std::noskipws >> f;
+	return(iss.eof() && !iss.fail());
 }
