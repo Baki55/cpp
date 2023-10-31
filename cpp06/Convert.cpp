@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 18:29:25 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/31 16:09:51 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/31 17:08:02 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -117,8 +117,43 @@ bool	ScalarConverter::isInt(void) const
 
 bool	ScalarConverter::isFloat(void)
 {
-	std::istringstream	iss(_str);
-	float	f;
-	iss >> std::noskipws >> f;
-	return(iss.eof() && !iss.fail());
+	if(_str.find( '.' ) == std::string::npos || _str.back() != 'f' || _str.find( '.' ) == 0 || _str.find( '.' ) == _str.length() - 2)
+		return(0);
+	int	found = 0;
+	int	i = 0;
+	while(_str[i] == '-' || _str[i] == '+')
+		i++;
+	while(i < (int)_str.length() - 1)
+	{
+		if(_str[i] == '.')
+			found++;
+		if((!std::isdigit(_str[i]) && _str[i] != '.' ) || found > 1)
+			return(0);
+		i++;
+	}
+	return(1);
+}
+
+bool	ScalarConverter::isDouble( void ) const
+{
+	if(_str.find( '.' ) == std::string::npos || _str.find( '.' ) == 0 || _str.find( '.' ) == _str.length() - 1)
+		return(0);
+	int	found = 0;
+	int	i = 0;
+	while(_str[i] == '-' || _str[i] == '+')
+		i++;
+	while(i < (int)_str.length())
+	{
+		if(_str[i] == '.')
+			found++;
+		if((!std::isdigit(_str[i]) && _str[i] != '.' ) || found > 1)
+			return(0);
+		i++;
+	}
+	return(1);
+}
+
+bool	ScalarConverter::isImpossible(void)
+{
+
 }
