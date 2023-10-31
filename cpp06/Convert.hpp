@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 18:24:10 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/29 19:31:18 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/31 17:01:50 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,19 +55,19 @@ public:
 	std::string	getStr(void) const;
 	e_type	getType(void) const;
 
-	void	setC( char c );
-	void	setI( int n );
-	void	setF( float f );
-	void	setD( double d );
-	void	setStr( std::string str );
+	void	setC(char c);
+	void	setI(int n);
+	void	setF(float f);
+	void	setD(double d);
+	void	setStr(std::string str);
 	void	setType( void );
 
-	bool	isChar( void ) const;
-	bool	isInt( void ) const;
-	bool	isFloat( void ) const;
-	bool	isDouble( void ) const;
+	bool	isChar(void) const;
+	bool	isInt(void) const;
+	bool	isFloat(void) const;
+	bool	isDouble(void) const;
 	bool	isImpossible( void );
-	bool	isLiterals( void ) const;
+	bool	isPseudoLiterals( void ) const;
 
 	void	printChar( void ) const ;
 	void	printInt( void ) const ;
