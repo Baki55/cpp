@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 18:24:10 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/31 17:01:50 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/10/31 21:32:23 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,15 +16,14 @@
 #include <iostream>
 #include <fstream>
 #include <limits>
+#include <sstream>
 
 enum e_type
 {
-	NONE,
 	INT,
 	FLOAT,
 	CHAR,
 	DOUBLE,
-	LITERALS
 };
 
 class ScalarConverter
@@ -60,21 +59,21 @@ public:
 	void	setF(float f);
 	void	setD(double d);
 	void	setStr(std::string str);
-	void	setType( void );
+	void	setType(void);
 
 	bool	isChar(void) const;
 	bool	isInt(void) const;
 	bool	isFloat(void) const;
 	bool	isDouble(void) const;
-	bool	isImpossible( void );
-	bool	isPseudoLiterals( void ) const;
+	bool	isImpossible(void);
+	bool	isPseudoLiterals(void) const;
 
-	void	printChar( void ) const ;
-	void	printInt( void ) const ;
-	void	printFloat( void ) const ;
-	void	printDouble( void ) const ;
+	void	printChar(void) const;
+	void	printInt(void) const;
+	void	printFloat(void) const;
+	void	printDouble(void) const;
 
-	void	convert( void );
+	void	convert(std::string str);
 
 	class ScalarConverterException : public std::exception
 	{
