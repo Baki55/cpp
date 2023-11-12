@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 18:29:25 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/31 21:54:04 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/11/12 19:04:34 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -194,8 +194,10 @@ void	ScalarConverter::setType(void)
 		_type = FLOAT;
 	else if(isDouble())
 		_type = DOUBLE;
+	else if(isPseudoLiterals())
+		_type = PSEUDOLITERALS;
 	else
-		throw ScalarConverter::ScalarConverterException();
+		_type = NONE;
 }
 
 void	ScalarConverter::convert(std::string str)
@@ -237,7 +239,7 @@ void	ScalarConverter::convert(std::string str)
 
 void	ScalarConverter::printChar(void) const
 {
-	if (!std::isprint(_n) && (_n >= 127))
+	if ((!std::isprint(_n) && (_n >= 127)) || _str.compare( "nan" ) == 0)
 		std::cout << "Impossible";
 	else if(!std::isprint(this->_n))
 		std::cout << "None displayable";
