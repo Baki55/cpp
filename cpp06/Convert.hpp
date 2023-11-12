@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 18:24:10 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/10/31 21:32:23 by bkhatib          ###   ########.fr       */
+/*   Updated: 2023/11/12 18:59:40 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,12 @@
 
 enum e_type
 {
+	NONE,
 	INT,
 	FLOAT,
 	CHAR,
 	DOUBLE,
+	PSEUDOLITERALS
 };
 
 class ScalarConverter
