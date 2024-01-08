@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 15:22:36 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/11/14 16:00:56 by bkhatib          ###   ########.fr       */
+/*   Updated: 2024/01/08 20:55:50 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ public:
 	
 	Array &operator=(const Array &src)
 	{
-		if(this != src)
+		if(this != &src)
 		{
 			if(this->data != NULL)
 				delete[] data;
