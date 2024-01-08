@@ -49,5 +49,48 @@ int main(int, char**)
         numbers[i] = rand();
     }
     delete [] mirror;//
+    
+    Array<int> a(10);
+    for (unsigned int i = 0; i < a.getSize(); i++)
+        a[i] = i;
+    std::cout << "a: ";
+    for (unsigned int i = 0; i < a.getSize(); i++)
+        std::cout << a[i] << " ";
+    std::cout << std::endl;
+
+    Array<int> b(a);
+    std::cout << "b: ";
+    for (unsigned int i = 0; i < b.getSize(); i++)
+        std::cout << b[i] << " ";
+    std::cout << std::endl;
+
+    Array<int> c;
+    c = b;
+    std::cout << "c: ";
+    for (unsigned int i = 0; i < c.getSize(); i++)
+        std::cout << c[i] << " ";
+    std::cout << std::endl;
+    c[7] = 2;
+    std::cout << "c[7] = " << c[7] <<std::endl;
+
+    try
+    {
+        std::cout << c[10] << std::endl;
+    }
+    catch(const std::exception& e)
+    {
+        std::cerr << e.what() << '\n';
+    }
+
+    std::cout << "b: ";
+    for (unsigned int i = 0; i < b.getSize(); i++)
+        std::cout << b[i] << " ";
+    std::cout << std::endl;
+
+    
+    std::cout << "c: ";
+    for (unsigned int i = 0; i < c.getSize(); i++)
+        std::cout << c[i] << " ";
+    std::cout << std::endl;
     return 0;
 }
