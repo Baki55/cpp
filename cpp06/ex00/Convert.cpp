@@ -6,7 +6,7 @@
 /*   By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/29 18:29:25 by bkhatib           #+#    #+#             */
-/*   Updated: 2023/11/12 19:04:34 by bkhatib          ###   ########.fr       */
+/*   Updated: 2024/01/08 20:17:46 by bkhatib          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -240,9 +240,9 @@ void	ScalarConverter::convert(std::string str)
 void	ScalarConverter::printChar(void) const
 {
 	if ((!std::isprint(_n) && (_n >= 127)) || _str.compare( "nan" ) == 0)
-		std::cout << "Impossible";
+		std::cout << "impossible";
 	else if(!std::isprint(this->_n))
-		std::cout << "None displayable";
+		std::cout << "Non displayable";
 	else
 		std::cout << "'" << getC() << "'";
 	std::cout << std::endl;
@@ -251,7 +251,7 @@ void	ScalarConverter::printChar(void) const
 void	ScalarConverter::printInt( void ) const
 {
 	if(this->isPseudoLiterals() || (!std::isprint(_n) && (_n >= 127 )))
-		std::cout << "Impossible";
+		std::cout << "impossible";
 	else
 		std::cout << getI();
 	std::cout << std::endl;
@@ -267,7 +267,7 @@ void	ScalarConverter::printFloat( void ) const
 	else if(_str.compare( "-inff" ) == 0 || _str.compare( "-inf" ) == 0)
 		std::cout << "-inff";
 	else if ( _impossible )
-		std::cout << "Impossible";
+		std::cout << "impossible";
 	else
 	{
 		if(_f - static_cast< int > ( _f ) == 0)
@@ -287,7 +287,7 @@ void	ScalarConverter::printDouble(void) const
 	else if(_str.compare( "-inff" ) == 0 || _str.compare( "-inf" ) == 0)
 		std::cout << "-inf";
 	else if(_impossible)
-		std::cout << "Impossible";
+		std::cout << "impossible";
 	else
 	{
 		if(_d - static_cast< int > ( _d ) == 0)
