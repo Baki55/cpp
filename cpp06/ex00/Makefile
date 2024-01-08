@@ -6,11 +6,11 @@
 #    By: bkhatib <bkhatib@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/12 18:49:35 by bkhatib           #+#    #+#              #
-#    Updated: 2023/11/12 18:51:51 by bkhatib          ###   ########.fr        #
+#    Updated: 2024/01/08 20:15:49 by bkhatib          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME		= ScalarConverter
+NAME		= convert
 	
 CC			= c++
 FLAGS		= -Wall -Wextra -Werror -std=c++98
